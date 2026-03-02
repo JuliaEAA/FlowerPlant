@@ -1,0 +1,490 @@
+@font-face {
+  font-family: 'Orange Avenue';
+  src: url('./assets/orange-avenue-demo/OrangeAvenueDEMO-Regular.otf') format('opentype');
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: #F9F4EF;
+
+}
+
+.site-header {
+  background-color: #67857C;
+}
+
+.site-header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-header-logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.site-logo-row {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  }
+
+.site-nav a {
+  color: #fffdfb;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.site-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.home-page {
+  text-align: left;
+  display: grid;
+  gap: 2rem;
+}
+
+.home-intro h1, .about-hero h1, .my-plants-page h1 {
+  font-style: normal;
+  margin: 0 0 0.75rem;
+  color: #846D88;
+  text-shadow: 1px 1px 2px #846D88;
+  font-family: 'Orange Avenue', Geneva, Tahoma, sans-serif;
+}
+
+.home-intro p {
+  margin: 0;
+  max-width: 680px;
+  line-height: 1.6;
+  
+}
+
+.plant-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.plant-media img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  outline: #ffffff solid 4px;
+}
+
+.plant-care-basics h2 {
+  margin-bottom: 0.75rem;
+  color: #D48881;
+}
+
+.plant-care-card {
+  background-color: #FCFAF8;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plant-care-card h2 {
+  margin: 0 0 0.45rem;
+}
+
+.plant-care-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.plant-care-basics ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+.plant-care-tips h2 {
+  margin-bottom: 0.75rem;
+  color: #D48881;
+}
+
+.plant-library-section h2 {
+  margin-bottom: 0.75rem;
+  color: #D48881;
+}
+
+.plant-recovery-card {
+  background-color: #FCFAF8;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plant-recovery-card h2 {
+  margin: 0 0 0.5rem;
+  color: #D48881;
+}
+
+.plant-recovery-card p {
+  margin: 0 0 0.65rem;
+  line-height: 1.6;
+}
+
+.plant-recovery-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.info-with-image {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.plant-recovery-section .info-with-image {
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.section-side-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plant-library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.plant-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.6rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  margin: 0;
+}
+
+.plant-card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.scientific-name {
+  color: #67857C;
+}
+
+.plant-card button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  background-color: #67857C;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.plant-card button:hover {
+  background-color: #9AB39D;
+}
+
+.plant-card button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.my-plants-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.my-plants-add-row {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  max-width: 360px;
+}
+
+.my-plants-filters {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #F9F4EF;
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+}
+
+.filter-field {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #846D88;
+}
+
+.my-plants-filters input,
+.my-plants-filters select {
+  border: 1px solid #d6cec6;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+.my-plants-filters input {
+  min-width: 260px;
+}
+
+.my-plants-filters button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  background-color: #846D88;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.filter-reset {
+  margin-bottom: 1px;
+}
+
+.plant-form {
+  margin-top: 0.25rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.plant-form-card {
+  min-height: 365px;
+}
+
+.plant-form-title {
+  margin: 0;
+  color: #846D88;
+}
+
+.add-card-closed {
+  cursor: pointer;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.add-plant-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: #67857C;
+  background-color: #f0f4f2;
+}
+
+.plant-form input,
+.plant-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d6cec6;
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+  background-color: #ffffff;
+}
+
+.plant-form-preview {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.plant-form-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.plant-form-actions button{
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  background-color: #846D88;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.plant-form-actions button:hover {
+  background-color: #BBA3C1;
+}
+
+.plant-card-actions button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  background-color: #67857C;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.plant-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about-page {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.about-hero h1 {
+  margin: 0 0 0.6rem;
+  color: #846D88;
+}
+
+.about-hero p {
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+.about-hero-images {
+  margin-top: 1rem;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h2 {
+  margin: 0 0 0.5rem;
+  color: #D48881;
+}
+
+.about-section p,
+.about-section li {
+  line-height: 1.6;
+}
+
+.about-section ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  background-color: #67857C;
+  color: #F4E7DF;
+}
+
+.site-footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+}
+
+.site-footer-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+.site-footer-column {
+  min-width: 0;
+}
+
+.site-footer-info h2 {
+  margin: 0 0 0.6rem;
+  color: #ffffff;
+}
+
+.site-footer-info p {
+  margin: 0.2rem 0;
+  line-height: 1.6;
+}
+
+.site-footer-company-logo {
+  width: 200px;
+  height: auto;
+}
+
+.site-footer-copy {
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info-with-image {
+    grid-template-columns: 1fr;
+  }
+
+  .section-side-image {
+    min-height: 220px;
+  }
+
+  .site-footer-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
