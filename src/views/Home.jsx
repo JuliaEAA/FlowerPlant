@@ -209,7 +209,7 @@ function Home() {
               <article className="plant-card" key={plant.id}>
                 <img src={plant.image} alt={plant.name} />
                 <h3>{plant.name}</h3>
-                <p className="scientific-name"><em>{plant.scientificName}</em></p>
+                <h4 className="scientific-name"><em>{plant.scientificName}</em></h4>
                 <p>Difficulty: {plant.difficulty}</p>
                 <p>{plant.sun}</p>
                 <p>{plant.water}</p>
