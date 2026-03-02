@@ -24,7 +24,9 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+], {
+  basename: '/FlowerPlant'
+})
 
 export default function App() {
   return (
