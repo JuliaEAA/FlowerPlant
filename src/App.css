@@ -13,6 +13,10 @@
 
 }
 
+:root p {
+  color: #130e14;
+}
+
 .site-header {
   background-color: #67857C;
 }
